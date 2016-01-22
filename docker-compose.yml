@@ -1,4 +1,9 @@
 node1:
-  build: .
+        #build: .
+  image: jsicotte/solrcloud
   ports:
     - "8984:8984"
+node2:
+  image: jsicotte/solrcloud
+  ports:
+    - "8985:8984"
