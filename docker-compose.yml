@@ -7,3 +7,7 @@ node2:
   image: jsicotte/solrcloud
   ports:
     - "8985:8984"
+zookepper:
+  image: jsicotte/zookeeper
+  ports:
+    - "2181:2181"

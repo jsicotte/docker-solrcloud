@@ -1,0 +1,5 @@
+FROM java:8
+RUN wget -q http://apache.arvixe.com/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz
+RUN tar xvfz zookeeper-3.4.6.tar.gz
+RUN cd zookeeper-3.4.6 ; cp conf/zoo_sample.cfg conf/zoo.cfg
+CMD cd zookeeper-3.4.6/bin ; ./zkServer.sh start-foreground
